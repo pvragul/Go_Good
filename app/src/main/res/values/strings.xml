@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GOGOOD</string>
+    <string name="placeyourlogohere">PlaceYourLogoHere</string>
+    <string name="user_detail">User Detail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="new_to_home">New to Home…</string>
+    <string name="add_new">Add New</string>
+    <string name="delete">Delete</string>
+    <string name="exit">Exit</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="bs">bs</string>
+    <string name="catchphrase">catchPhrase</string>
+    <string name="name">Name</string>
+    <string name="company_details">Company Details</string>
+    <string name="website">Website</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="city">City</string>
+    <string name="suite">Suite</string>
+    <string name="street">Street</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="user_name">User Name</string>
+    <string name="id_no">ID No</string>
+</resources>

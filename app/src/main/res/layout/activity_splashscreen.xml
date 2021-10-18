@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_primary_color"
+    tools:context=".splashscreen">
+
+    <ImageView
+        android:id="@+id/secondary_screen_jacket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_background_2" />
+
+
+    <ImageView
+        android:id="@+id/splash_screen_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="25dp"
+        android:src="@drawable/gogood_logo"
+        android:contentDescription="@string/placeyourlogohere">
+
+    </ImageView>
+
+
+
+</RelativeLayout>

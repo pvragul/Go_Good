@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
+    android:layout_margin="10dp"
+    android:background="@color/no_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameBoard">
+
+        <TextView
+            android:id="@+id/selectedIDNo"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bordor"
+            android:fontFamily="@font/advent_pro"
+            android:paddingStart="5dp"
+            android:text="@string/id_no"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/receivedIDNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/selectedIDNo"
+            android:background="@drawable/round_bordor"
+            android:fontFamily="@font/advent_pro"
+            android:paddingStart="5dp"
+            android:text="@string/id_no"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/selectedName"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receivedIDNo"
+            android:text="@string/name"
+            android:paddingStart="5dp"
+            android:textColor="@color/logo_color"
+            android:fontFamily="@font/advent_pro"
+            android:textSize="20sp"
+            android:background="@drawable/round_bordor"/>
+        <TextView
+            android:id="@+id/receivedName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receivedIDNo"
+            android:text="@string/name"
+            android:paddingStart="5dp"
+            android:fontFamily="@font/advent_pro"
+            android:layout_toEndOf="@id/selectedName"
+            android:textColor="@color/logo_color"
+
+            android:textSize="20sp"
+            android:background="@drawable/round_bordor"/>
+
+        <TextView
+            android:id="@+id/selectedUserId"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receivedName"
+            android:background="@drawable/round_bordor"
+            android:fontFamily="@font/advent_pro"
+            android:paddingStart="5dp"
+            android:text="@string/user_name"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/receivedUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receivedName"
+            android:layout_toEndOf="@id/selectedUserId"
+            android:background="@drawable/round_bordor"
+            android:fontFamily="@font/advent_pro"
+            android:paddingStart="5dp"
+            android:text="@string/user_name"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/selectedEmail"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receivedUserName"
+            android:text="@string/email"
+            android:paddingStart="5dp"
+            android:fontFamily="@font/advent_pro"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp"
+            android:background="@drawable/round_bordor"/>
+        <TextView
+            android:id="@+id/receivedEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receivedUserName"
+            android:text="@string/email"
+            android:paddingStart="5dp"
+            android:fontFamily="@font/advent_pro"
+            android:layout_toEndOf="@id/selectedUserId"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp"
+            android:background="@drawable/round_bordor"/>
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/addressBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:background="@drawable/round_bordor"
+                android:fontFamily="@font/advent_pro"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:text="@string/address"
+                android:textStyle="bold"
+                android:textColor="@color/logo_color"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/receivedgeoLocation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@id/address"
+                android:background="@drawable/round_bordor"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_baseline_location_on_24" />
+
+            <TextView
+                android:id="@+id/selectedStreet"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:background="@drawable/round_bordor"
+                android:fontFamily="@font/advent_pro"
+                android:paddingStart="20dp"
+                android:text="@string/street"
+                android:textColor="@color/logo_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/receivedStreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:layout_toEndOf="@id/selectedStreet"
+                android:background="@drawable/round_bordor"
+                android:fontFamily="@font/advent_pro"
+                android:paddingStart="5dp"
+                android:text="@string/street"
+                android:textColor="@color/logo_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/selectedSuite"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/receivedStreet"
+                android:background="@drawable/round_bordor"
+                android:fontFamily="@font/advent_pro"
+                android:paddingStart="20dp"
+                android:text="@string/suite"
+                android:textColor="@color/logo_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/receivedSuite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/receivedStreet"
+                android:layout_toEndOf="@id/selectedSuite"
+                android:background="@drawable/round_bordor"
+                android:fontFamily="@font/advent_pro"
+                android:paddingStart="5dp"
+                android:text="@string/suite"
+                android:textColor="@color/logo_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/selectedCity"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/receivedSuite"
+                android:background="@drawable/round_bordor"
+                android:fontFamily="@font/advent_pro"
+                android:paddingStart="20dp"
+                android:text="@string/city"
+                android:textColor="@color/logo_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/receivedCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/receivedSuite"
+                android:layout_toEndOf="@id/selectedCity"
+                android:background="@drawable/round_bordor"
+                android:fontFamily="@font/advent_pro"
+                android:paddingStart="5dp"
+                android:text="@string/city"
+                android:textColor="@color/logo_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/selectedZipcode"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/receivedCity"
+                android:background="@drawable/round_bordor"
+                android:fontFamily="@font/advent_pro"
+                android:paddingStart="20dp"
+                android:text="@string/zipcode"
+                android:textColor="@color/logo_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/receivedZipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/receivedCity"
+                android:layout_toEndOf="@id/selectedZipcode"
+                android:background="@drawable/round_bordor"
+                android:fontFamily="@font/advent_pro"
+                android:paddingStart="5dp"
+                android:text="@string/zipcode"
+                android:textColor="@color/logo_color"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneNumber"
+            android:fontFamily="@font/advent_pro"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:background="@drawable/round_bordor"
+            android:text="@string/phone_no"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/receivedphoneNumber"
+            android:fontFamily="@font/advent_pro"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:layout_toEndOf="@id/phoneNumber"
+            android:background="@drawable/round_bordor"
+            android:text="@string/phone_no"/>
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/website"
+            android:layout_below="@id/receivedphoneNumber"
+            android:fontFamily="@font/advent_pro"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:background="@drawable/round_bordor"
+            android:text="@string/website"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/receivedWebsite"
+            android:layout_below="@id/receivedphoneNumber"
+            android:fontFamily="@font/advent_pro"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:layout_toEndOf="@id/phoneNumber"
+            android:background="@drawable/round_bordor"
+            android:text="@string/website"/>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact">
+
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bordor"
+            android:fontFamily="@font/advent_pro"
+            android:paddingStart="5dp"
+            android:text="@string/company_details"
+            android:textStyle="bold"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company"
+            android:id="@+id/companyName"
+            android:text="@string/name"
+            android:paddingStart="5dp"
+            android:background="@drawable/round_bordor"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp"
+            android:fontFamily="@font/advent_pro"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company"
+            android:layout_toEndOf="@id/companyName"
+            android:id="@+id/receivedcompanyName"
+            android:text="@string/name"
+            android:background="@drawable/round_bordor"
+            android:paddingStart="5dp"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp"
+            android:fontFamily="@font/advent_pro"/>
+
+        <TextView
+            android:id="@+id/companycp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companyName"
+            android:background="@drawable/round_bordor"
+            android:fontFamily="@font/advent_pro"
+            android:paddingStart="5dp"
+            android:text="@string/catchphrase"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receivedcompanyName"
+            android:layout_toEndOf="@id/companycp"
+            android:id="@+id/receivedcompanycp"
+            android:text="@string/catchphrase"
+            android:background="@drawable/round_bordor"
+            android:paddingStart="5dp"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp"
+            android:fontFamily="@font/advent_pro"/>
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receivedcompanycp"
+            android:background="@drawable/round_bordor"
+            android:id="@+id/companybs"
+            android:text="@string/bs"
+            android:paddingStart="5dp"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp"
+            android:fontFamily="@font/advent_pro"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receivedcompanycp"
+            android:layout_toEndOf="@id/companybs"
+            android:id="@+id/receivedcompanybs"
+            android:text="@string/bs"
+            android:background="@drawable/round_bordor"
+            android:paddingStart="5dp"
+            android:textColor="@color/logo_color"
+            android:textSize="20sp"
+            android:fontFamily="@font/advent_pro"/>
+
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
